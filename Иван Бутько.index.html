@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Моя страница</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Привет, Друг!</h1>
+    <p>Я учусь создавать сайты.</p>
+
+    <div class="photos">
+      <img src="18a5e3b1ce09423b276d5780b634ca0a.jpg" alt="Фото 1" />
+      <img src="2d5d2b42af9f54fd3364bbd09b6e4064.jpg" alt="Фото 2" />
+    </div>
+
+    <button id="vkButton">Я Вконтакте</button>
+    <button id="tgButton">Мой Телеграм</button>
+
+
+    <script>
+
+      const vkBtn = document.getElementById('vkButton');
+      const tgBtn = document.getElementById('tgButton');
+
+      vkBtn.addEventListener('click', function() {
+        window.open('https://m.vk.com/feed/', '_blank');
+      });
+ 
+      tgBtn.addEventListener('click', function() {
+        window.open('https://web.telegram.org/a/', '_blank');
+      });
+    </script>
+  </body>
+</html>
